@@ -2,17 +2,27 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body, html {
   height: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: #000000 url(https://wallpaperaccess.com/full/38580.jpg) fixed no-repeat ;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 #nav-area {
   display: flex;
   justify-content: center;
   height: 10%;
-  background: red;
+  border: 1px solid red;
 }
 
 #nav-area .nav-menu {
@@ -22,16 +32,45 @@ body, html {
   border: 1px solid blue;
 }
 
+.frosted-glass {
+  display: flex;
+  justify-content: center;
+  width: 36rem;
+  background: inherit;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 2rem;
+  /* box-sizing: border-box; */
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+  height: 75%;
+
+}
+
+.frosted-glass::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: inherit;
+  box-shadow: inset 0 0 3000px rgba(255,255,255,.5);
+  filter: blur(8px);
+  margin: -20px;
+}
+
 #body-area {
   display: flex;
   justify-content: center;
-  height: 80%;
 }
 
 #body-area .container {
-  margin: 2rem;
   display: flex;
   flex-flow: column;
+  margin: 2rem 0;
+  border-radius: 3%;
+  border: 1px solid green;
+  /* background: white; */
 }
 
 #body-area h1 {
@@ -43,7 +82,7 @@ body, html {
 #body-area button {
   background: blue;
   color: white;
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin: 3rem 0 0 0;
   padding: 0 4rem;
   border-radius: 10%;
@@ -54,26 +93,26 @@ body, html {
   flex-flow: column;
   align-items: center;
   align-content: center;
-  height: auto;
-  width: auto;
-  border: 1px solid blue;
-  padding: 5rem;
-  border-radius: 3%;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
 }
 
 #body-area label {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0;
+  font-size: 1rem;
 }
 
 #body-area input {
-  padding: .5rem 1.5rem .5rem 1.5rem;
+  padding: .5rem 1.5rem;
+  opacity: .4;
 }
 
 #footer-area {
   display: flex;
   justify-content: center;
   height: 10%;
-  background: red;
+border: 1px solid red;
 }
 
 #footer-area .footer-menu {
