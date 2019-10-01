@@ -79,13 +79,14 @@ body {
 #body-area h1 {
   color: #BF7C2A;
   font-size: 2rem;
-  margin-bottom: 2rem;
+
 }
 
 #body-area .line {
   text-align: center;
   width: 80%;
   border-bottom: 1px solid #595137;
+  margin-bottom: 4rem;
 }
 
 #body-area button {
@@ -140,4 +141,8 @@ body {
 #footer-area .footer-menu {
   font-size: 1.3rem;
   height: auto;
+}
+#firstname {
+  /* background: #B33D12  #4DCC6E; */
+  opacity:
 }
