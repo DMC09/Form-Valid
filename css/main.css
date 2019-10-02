@@ -81,6 +81,7 @@ body {
   color: purple;
   font-size: 2rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 }
 
@@ -89,6 +90,11 @@ body {
   width: 80%;
   border-bottom: 1px solid #595137;
   margin-bottom: 4rem;
+=======
+
+
+  width: 100%
+>>>>>>> parent of afb022f... v.0.3
 =======
 
 
@@ -136,8 +142,11 @@ body {
 #footer-area .footer-menu {
   margin: 1rem 1rem;
   border: 1px solid blue;
+<<<<<<< HEAD
 }
 #firstname {
   /* background: #B33D12  #4DCC6E; */
   opacity:
+=======
+>>>>>>> parent of afb022f... v.0.3
 }
