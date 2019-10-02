@@ -21,23 +21,41 @@
   <div class="frosted-glass">
     <div id="body-area">
       <div class="container ">
+<<<<<<< HEAD
         <form id="myForm" action="" name="myForm" novalidate >
           <div class="line">
             <h1>Javascript form validator</h1>
           </div>
           <label for="firstname">First Name</label>
-          <input type="text" name="firstname" id="firstname" placeholder="  First Name" onblur="validateFirstName()"  />
+          <input type="text" name="firstname" id="firstname" placeholder="  First Name" onblur="validateFirstName()"  required>
           <span id="helper-text"></span>
           <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname" placeholder="  Last Name" onfocusout="validateLastName()" />
+          <input type="text" name="lastname" id="lastname" placeholder="  Last Name" onfocusout="validateLastName()" >
           <span class="helper-text"></span>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="  E-mail" onfocusout="validateEmail()"/>
+          <input type="email" name="email" id="email" placeholder="  E-mail" onfocusout="validateEmail()">
           <span class="helper-text"></span>
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" placeholder="  &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"  onfocusout="validatePassword()"/>
-          <span class="helper-text"></span>
+          <input type="password" name="password" id="password" placeholder="  &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"  onfocusout="validatePassword()">
+          <span class="helper-text"></span
+          <button id="register" type="submit">Register</button>
+=======
+        <form action="" name="registration">
+          <h1>Please fill out this form</h1>
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" id="firstname" placeholder="First Name" />
+
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name" />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder=e-mail address />
+
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" />
+
           <button type="submit">Register</button>
+>>>>>>> parent of afb022f... v.0.3
 
         </form>
       </div>
