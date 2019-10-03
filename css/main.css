@@ -123,11 +123,16 @@ body {
   opacity: .4;
   line-height: 1.5rem;
   border-radius: 3%;
-  border: .5px solid black;
+  transition: transform .75s ease-in-out;
+
 }
 
 #body-area input::placeholder {
   font-size: 1rem;
+}
+#body-area input:hover {
+  border: 1.5px solid #FFFB00;
+  transform: scale(1.1);
 }
 
 #footer-area {

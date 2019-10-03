@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand|Ubuntu&display=swap" rel="stylesheet">
   <title>Js Form validator</title>
+
 </head>
 
 <body>
@@ -20,22 +21,22 @@
   <div class="frosted-glass">
     <div id="body-area">
       <div class="container ">
-        <form action="" name="registration">
+        <form action="" id="myForm" name="registration" novalidate>
           <div class="line">
             <h1>Javascript form validator</h1>
           </div>
           <label for="firstname">First Name</label>
-          <input type="text" name="firstname" id="firstname" placeholder="  First Name" />
-
+          <input type="text" name="firstname" id="firstname" placeholder="  First Name"  required/>
+          <span class="helper-text"></span>
           <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname" placeholder="  Last Name" />
-
+          <input type="text" name="lastname" id="lastname" placeholder="  Last Name"  required/>
+          <span class="helper-text"></span>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="  E-mail" />
-
+          <input type="email" name="email" id="email" placeholder="  E-mail" required />
+          <span class="helper-text"></span>
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" placeholder="  &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
-
+          <input type="password" name="password" id="password" placeholder="  &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required />
+          <span class="helper-text"></span>
           <button type="submit">Register</button>
 
         </form>
@@ -59,7 +60,7 @@
 
 
 
-
+<script src="./script.js" charset="utf-8"></script>
 
 </body>
 
