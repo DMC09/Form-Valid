@@ -21,22 +21,29 @@
   <div class="frosted-glass">
     <div id="body-area">
       <div class="container ">
-        <form action="" id="myForm" name="registration" novalidate>
+        <form action="" class="validate" id="myForm" name="registration">
           <div class="line">
             <h1>Javascript form validator</h1>
           </div>
-          <label for="firstname">First Name</label>
-          <input type="text" name="firstname" id="firstname" placeholder="  First Name"  required/>
-          <div class="helper-text"></div>
-          <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname" placeholder="  Last Name"  required/>
-          <div class="helper-text"></div>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="  E-mail" required />
-          <div class="helper-text"></div>
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" placeholder="  &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required />
-          <div class="helper-text"></div>
+          <div class="input-box">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="  First Name" required />
+          </div>
+          <div class="input-box">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="  Last Name" required />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="  E-mail" minlength="6" maxlength="20"
+              pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+              required />
+          </div>
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required />
+
+          </div>
           <button type="submit">Register</button>
 
         </form>
@@ -60,7 +67,7 @@
 
 
 
-<script src="./script.js" charset="utf-8"></script>
+  <script src="./script.js" charset="utf-8"></script>
 
 </body>
 
