@@ -15,7 +15,7 @@
 <body>
   <div id="nav-area">
     <ul class="nav-menu">
-      <li>Home</li>
+      <a href="./index.html"><li>Home</li></a>
     </ul>
   </div>
   <div class="frosted-glass">
@@ -27,6 +27,7 @@
           <div class="line">
             <h1>Javascript form validator</h1>
           </div>
+<<<<<<< Updated upstream
           <label for="firstname">First Name</label>
           <input type="text" name="firstname" id="firstname" placeholder="  First Name" onblur="validateFirstName()"  required>
           <span id="helper-text"></span>
@@ -62,6 +63,29 @@
 
           <button type="submit">Register</button>
 >>>>>>> parent of afb022f... v.0.3
+=======
+          <div class="input-box">
+            <label for="firstname">First Name</label>
+            <input type="text" name="First Name" id="firstName"  onfocusout="validateFirstName()"/>
+            <span class="helper-text"></span>
+          </div>
+          <div class="input-box">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="Last Name" id="lastName"  onfocusout="validateLastName()"/>
+            <span class="helper-text"></span>
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email"  onfocusout="validateEmail()" />
+            <span class="helper-text"></span>
+          </div>
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" onfocusout="validatePassword()" />
+            <span class="helper-text"></span>
+          </div>
+          <button class="ripple" type="submit">Register</button>
+>>>>>>> Stashed changes
 
         </form>
       </div>
