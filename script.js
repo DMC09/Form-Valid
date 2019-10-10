@@ -17,11 +17,11 @@ const red = "#f44336"
 form.addEventListener('submit', function(event) {
   // Prevent default behaviour
   if (
-    !validateFirstName() &&
-    !validateLastName() &&
-    !validatePassword() &&
+    !validateFirstName() ||
+    !validateLastName() ||
+    !validateEmail() ||
     // !validateConfirmPassword() ||
-    !validateEmail()
+    !validatePassword()
   ) event.preventDefault();
    console.log('hello');
 });
@@ -31,7 +31,7 @@ function validateFirstName() {
   // check if is empty
   if (checkIfEmpty(firstName)) return;
   //check if it has letters
-  if (checkIfOnlyLetters(firstName)) return;
+  if (!checkIfOnlyLetters(firstName)) return;
   return true;
 }
 
@@ -39,7 +39,7 @@ function validateLastName() {
   // check if is empty
   if (checkIfEmpty(lastName)) return;
   //check if it has letters
-  if (checkIfOnlyLetters(lastName)) return;
+  if (!checkIfOnlyLetters(lastName)) return;
   return true;
 }
 
@@ -47,30 +47,30 @@ function validatePassword(){
   //empty
   if(checkIfEmpty(password)) return;
   //length requirements
-  if(!meetLength(password,4,20)) return;
+  if(!meetLength(password,4,30)) return;
   //check password regex
   //1-a
   //2 -a 1
   //3- A a 1
   //4- A a 1 @
-  if(!containsCharacters(password, 1)) return;
+  if(!containsCharacters(password, 4)) return;
   return true
 }
 
-function validateConfirmPassword(){
-  if(password.className !== "valid"){
-    setInvalid(confirmPassword, `Password must be valid`);
-    return;
-  }
-  // check if they are equal
-  if(password.value !== confirmPassword.value){
-    setInvalid(confirmPassword,`Passwords must match`)
-    return;
-  } else {
-    setValid(confirmPassword)
-  }
-  return true;
-}
+// function validateConfirmPassword(){
+//   if(password.className !== "valid"){
+//     setInvalid(confirmPassword, `Password must be valid`);
+//     return;
+//   }
+//   // check if they are equal
+//   if(password.value !== confirmPassword.value){
+//     setInvalid(confirmPassword,`Passwords must match`)
+//     return;
+//   } else {
+//     setValid(confirmPassword)
+//   }
+//   return true;
+// }
 
 function validateEmail(){
   if(checkIfEmpty(email)) return;
