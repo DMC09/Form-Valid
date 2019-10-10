@@ -1,5 +1,6 @@
 @import "./reset.css";
 
+/* GENERAL STYLING */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +18,15 @@ body {
   margin: 0;
   padding: 0;
 }
+.nav-menu a {
+  color: white;
+  transition: color .5s ease-in-out;
+}
 
+.nav-menu a:hover {
+  color: lightblue;
+}
+/* NAV STYLING  */
 #nav-area {
   display: flex;
   justify-content: center;
@@ -32,6 +41,7 @@ body {
   font-size: 1.3rem;
 }
 
+/* MAIN AREA */
 .frosted-glass {
   display: flex;
   justify-content: center;
@@ -77,33 +87,24 @@ body {
   justify-content: center;
 }
 
-#body-area h1 {
-  color: #BF7C2A;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-#body-area .line {
+#body-area .heading-box {
   text-align: center;
   width: 80%;
   border-bottom: 1px solid #595137;
-  height: 10%;
+  height: 15%;
+  display: flex;
+align-items: center;
+}
+
+#body-area h1 {
+  color: #2C4459;
+  font-size: 2rem;
+  margin: 0;
+  /* border-bottom: 1px solid #595137; */
 }
 
 .helper-text {
   display: block;
-}
-
-#body-area button {
-  background: #593A1E;
-  color: white;
-  font-size: 1.75rem;
-  height: 5%;
-  width: 80%;
-  border-radius: 3%;
-  opacity: .6;
-  border: .5px solid black;
-  margin-top: 2rem;
 }
 
 #body-area form {
@@ -117,10 +118,15 @@ body {
   height: 100%;
 }
 
+#body-area .input-box {
+  height: 10%;
+  text-align: center;
+}
+
 #body-area label {
   margin: .5rem 0;
   font-size: 1.3rem;
-  color: #2C4459;
+  color: #BF7C2A;
   font-weight: 600;
 }
 
@@ -132,17 +138,37 @@ body {
   line-height: 1.5rem;
   border-radius: 3%;
   transition: transform .75s ease-in-out;
-}
-
-#body-area input::placeholder {
-  font-size: 1rem;
+  color: white;
+  border-bottom:  1px solid grey;
 }
 
 #body-area input:hover {
-  border: 1.5px solid #FFFB00;
+  border-bottom: 2px solid #FFFB00;
   transform: scale(1.1);
 }
 
+#body-area button {
+  background: #5B83A6;
+  color: white;
+  font-size: 1.75rem;
+  height: 5%;
+  width: 80%;
+  border-radius: 3%;
+  opacity: .6;
+  border: .5px solid #2C4459;
+  transition: background .5s ease-in-out ;
+}
+#body-area button:hover {
+  background: #2C4459;
+}
+
+#body-area .success-text {
+  color: #2C4459;
+ width: 50%;
+  text-align: center;
+}
+
+/* FOOTER AREA / ERRORS */
 #footer-area {
   display: flex;
   justify-content: center;
@@ -153,11 +179,7 @@ body {
 #footer-area .footer-menu {
   font-size: 1.3rem;
   height: auto;
-}
-
-.input-box {
-  height: 15%;
-  text-align: center;
+  color: white;
 }
 
 /**
@@ -169,6 +191,5 @@ body {
 
 .error-message {
   color: red;
-  font-style: italic;
   margin-bottom: 1em;
 }

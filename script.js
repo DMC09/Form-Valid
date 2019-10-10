@@ -153,7 +153,7 @@ function containsCharacters (field,code) {
     case 4:
     //letter and number
     regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/
-    return matchWithRegEx(regEx, field,`must contain these characters:1 Upper case 1 Lower case 1 Number, 1 special symbol`)
+    return matchWithRegEx(regEx, field,`Please inclue:1 Upper case 1 Lower case, 1 Number & 1 special symbol`)
     case 5:
     //email
     regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
