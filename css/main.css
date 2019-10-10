@@ -74,6 +74,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #body-area h1 {
@@ -86,13 +87,18 @@ body {
   text-align: center;
   width: 80%;
   border-bottom: 1px solid #595137;
+  height: 10%;
+}
+
+.helper-text {
+  display: block;
 }
 
 #body-area button {
   background: #593A1E;
   color: white;
   font-size: 1.75rem;
-  /* margin: 4rem 0 0 0; */
+  height: 5%;
   width: 80%;
   border-radius: 3%;
   opacity: .6;
@@ -105,8 +111,10 @@ body {
   flex-flow: column;
   align-items: center;
   align-content: center;
-  margin: auto;
+  justify-content: space-around;
+  margin: 0;
   width: 80%;
+  height: 100%;
 }
 
 #body-area label {
@@ -124,12 +132,12 @@ body {
   line-height: 1.5rem;
   border-radius: 3%;
   transition: transform .75s ease-in-out;
-
 }
 
 #body-area input::placeholder {
   font-size: 1rem;
 }
+
 #body-area input:hover {
   border: 1.5px solid #FFFB00;
   transform: scale(1.1);
@@ -148,21 +156,19 @@ body {
 }
 
 .input-box {
-  height: inherit;
-
+  height: 15%;
   text-align: center;
 }
-
 
 /**
  * Errors
  */
 .error {
-    border-color: red;
+  border-color: red;
 }
 
 .error-message {
-    color: red;
-    font-style: italic;
-    margin-bottom: 1em;
+  color: red;
+  font-style: italic;
+  margin-bottom: 1em;
 }
